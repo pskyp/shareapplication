@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>54b89de4-170d-47e9-a855-b25cd15ca8a2</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>grabSharebalancesheet.py</StartupFile>
+    <StartupFile>IndexFundanmentalsGrab.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,10 +29,7 @@
     <Compile Include="GetShareindex.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="module1.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="module2.py">
+    <Compile Include="MagicFormula.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

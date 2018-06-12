@@ -11,6 +11,8 @@ import random
 engine=create_engine("mssql+pyodbc://pierswilcox:wsShagp1ece@shareserverdb1.database.windows.net:1433/sahredatabase?driver=ODBC+Driver+17+for+SQL+Server")
 #gets the list of share codes (Epic), names and index from the database
 sharelistdf=pd.read_sql('SELECT * FROM ShareIndex', engine)
+#puts them alphabetically
+sharelistdf= sharelistdf.sort_values(by='Epic')
 #takes the Share codes and put them in a list
 listofshares=sharelistdf['Epic'].tolist()
 #if you want just a portion of the list for testing
