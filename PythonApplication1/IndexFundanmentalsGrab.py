@@ -60,7 +60,7 @@ def dataframebuilder(value = []):
             shareurl = "https://shares.telegraph.co.uk/fundamentals/?epic={}".format(Epic)   
             sharebalancesheet = requests.get(shareurl, timeout=10)
             
-            #Get the sectot and activites disctripion, it's table 3
+            #Get the sector and activites disctripion, it's table 3
             
             df5= pd.read_html(sharebalancesheet.content)[2]
             #transposed dataframe
